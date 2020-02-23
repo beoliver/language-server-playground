@@ -44,13 +44,11 @@
 (defmethod rpc "textDocument/hover"
   [{:keys [context params] :as data}]
   (println "document hover...")
-  (clojure.pprint/pprint params)
   {:context context :result {:contents "YOLO"}})
 
 (defmethod rpc "$/cancelRequest"
   [{:keys [context params] :as data}]
   (println "cancel request...")
-  (clojure.pprint/pprint params)
   {:context context})
 
 (defmethod rpc :default

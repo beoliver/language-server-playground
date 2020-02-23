@@ -18,7 +18,7 @@
   [{:keys [context params]}]
   (let [result {:capabilities {:textDocumentSync {:openClose true :change 2}
                                :hoverProvider true}
-                :serverInfo {:name "Bens Language Server"
+                :serverInfo {:name "Language Server Playground"
                              :version "0.0.1"}}]
     {:context context :result result}))
 
